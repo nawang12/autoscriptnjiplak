@@ -1,9 +1,9 @@
 #!/bin/bash
 
 #############################################
-# Install vps for indonesian phreak
+# Install vps for indonesian phreak Njiplak hahahahahaha
 # Debian 7
-# By ww.fb.com/ardi85
+# By Huda Wong Bejo
 #############################################
 
 export DEBIAN_FRONTEND=noninteractive
@@ -197,27 +197,27 @@ if [ -e /etc/openvpn/server.conf ]; then
 		esac
 	done
 else
-	echo 'Selamat Datang di quick OpenVPN "road warrior" installer'
-	echo "Modifikasi Oleh Abu naifa untuk opreker"
+	echo 'Selamat Datang di quick OpenVPN "Njiplak" installer'
+	echo "Modifikasi Oleh Abu naifa untuk opreker Di Jiplak Oleh Huda Bejo"
 	echo ""
 	# OpenVPN setup and first user creation
-	echo "Pertama-tama saya perlu tahu alamat IPv4 yang ingin diinstall OpenVPN"
+	echo "Kaping Setunggal kulo perlu ngertos alamat IPv4 sing arep diinstall OpenVPN"
 	echo "listening to."
 	read -p "IP address: " -e -i $IP IP
 	echo ""
-	echo "Port untuk OpenVPN?"
+	echo "Port kanggo OpenVPN?"
 	read -p "Port: " -e -i 1194 PORT
 	echo ""
-	echo "Apakah Anda ingin OpenVPN akan tersedia pada port 53 juga?"
-	echo "Hal ini dapat berguna untuk menghubungkan ke restrictive networks"
+	echo "Opo njenengan kepengen OpenVPN akan tersedia pada port 53 juga?"
+	echo "Hal iki mergo iso kanggo ngehubungno nok restrictive networks"
 	read -p "Listen port 53 [y/n]:" -e -i y ALTPORT
 	echo ""
-	echo "Sebutkan namamu untuk cert klien"
-	echo "Silakan, gunakan satu kata saja, tidak ada karakter khusus"
-	read -p "Nama Client: " -e -i client CLIENT
+	echo "Sebutkan jenengmu untuk cert klien"
+	echo "Silakan, gunako seunggal kata ae, Gak ono karakter khusus"
+	read -p "jeneng Client: " -e -i client CLIENT
 	echo ""
-	echo "Oke, itu semua saya butuhkan. Kami siap untuk setup OpenVPN server Anda sekarang"
-	read -n1 -r -p "Tekan sembarang tombol untuk melanjutkan ..."
+	echo "Oke, iku kabeh kulo butuhno. kito siap untuk setup OpenVPN server Njenengan sakniki"
+	read -n1 -r -p "petek sembarang tombol kanggo ngelanjutno ..."
 	apt-get update
 	apt-get install openvpn iptables openssl -y
 	cp -R /usr/share/doc/openvpn/examples/easy-rsa/ /etc/openvpn
